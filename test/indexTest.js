@@ -2,6 +2,90 @@ require ( './root.js' );
 
 var a, b
 
+
+// root.js
+function add(a, b) {
+  return a + b;
+}
+
+// ... other functions ...
+
+module.exports = {
+  add,
+  // ... other exports ...
+};
+
+
+function subtract(a, b) {
+  return a - b ;
+}
+
+module.exports = {
+  subtract,
+};
+
+// root.js
+function multiply(a, b) {
+  return a * b;
+}
+
+// ... other functions ...
+
+module.exports = {
+  multiply,
+  // ... other exports ...
+};
+
+// root.js
+function divide(a, b) {
+  return a / b;
+}
+
+// ... other functions ...
+
+module.exports = {
+  divide,
+  // ... other exports ...
+};
+
+// root.js
+function increment(n) {
+  return n + 1;
+}
+
+// ... other functions ...
+
+module.exports = {
+  increment,
+  // ... other exports ...
+};
+
+// root.js
+function decrement(n) {
+  return n - 1;
+}
+
+function makeInt(n) {
+  return parseInt(n, 10);
+}
+
+function preserveDecimal(n) {
+  return parseFloat(n);
+}
+
+// ... other functions ...
+
+module.exports = {
+  decrement,
+  makeInt,
+  preserveDecimal,
+  // ... other exports ...
+};
+
+
+
+
+
 beforeEach(function() {
   a = Math.floor(Math.random() * 1000)
   b = Math.floor(Math.random() * 1000)
